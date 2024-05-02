@@ -10,6 +10,7 @@ CT_DoArchTupleValues()
     # The system part of the tuple:
     case "${CT_LIBC}" in
         uClibc-ng)CT_TARGET_SYS=uclibc${CT_ARCH_BINFMT_FDPIC:+fdpic};;
+        musl)CT_TARGET_SYS=musl${CT_ARCH_BINFMT_FDPIC:+fdpic};;
     esac
 }
 
